@@ -1,0 +1,23 @@
+[project]
+name = "question-creation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vivaan Parashar", email = "parashar.xtra@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.0.1",
+    "matplotlib>=3.11.2",
+    "torch>=2.14.0",
+    "torchinfo>=1.8.0",
+    "torchvision>=0.29.0",
+]
+
+[project.scripts]
+question-creation = "question_creation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
